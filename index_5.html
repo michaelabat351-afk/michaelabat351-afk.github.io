@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Abat — AI Systems VA</title>
+<meta name="description" content="Operations Coordinator and Virtual Assistant with 18+ years in manufacturing operations, supporting manufacturing, e-commerce, logistics, and construction businesses.">
+
+<!-- Link preview (LinkedIn, Viber, Teams, email) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://michaelabat351-afk.github.io/">
+<meta property="og:title" content="Michael Abat — AI Systems VA">
+<meta property="og:description" content="Operations coordination and process documentation for manufacturing, logistics, e-commerce, and construction businesses. 18+ years in operations.">
+<meta property="og:site_name" content="Michael Abat">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Michael Abat — AI Systems VA">
+<meta name="twitter:description" content="Operations coordination and process documentation for manufacturing, logistics, e-commerce, and construction businesses. 18+ years in operations.">
+<link rel="canonical" href="https://michaelabat351-afk.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --navy: #0a1628;
+    --navy-2: #0f2040;
+    --teal: #0d9e75;
+    --teal-mid: #1d9e75;
+    --teal-light: #e1f5ee;
+    --teal-pale: #9fe1cb;
+    --amber: #ef9f27;
+    --amber-light: #faeeda;
+    --white: #ffffff;
+    --off: #f4f3ef;
+    --text: #1a1a1a;
+    --muted: #6b7280;
+    --border: rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.14);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,22,40,0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 40px; height: 60px;
+  }
+  .nav-logo {
+    font-family: 'DM Serif Display', serif;
+    color: #fff; font-size: 18px; text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+  .nav-logo span { color: var(--amber); font-style: italic; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.55); font-size: 13px;
+    text-decoration: none; transition: color .2s;
+    letter-spacing: .04em;
+  }
+  .nav-links a:hover { color: rgba(255,255,255,0.9); }
+  .nav-cta {
+    background: var(--teal); color: #fff;
+    padding: 8px 20px; border-radius: 6px;
+    font-size: 13px; font-weight: 500; text-decoration: none;
+    transition: opacity .2s;
+  }
+  .nav-cta:hover { opacity: .85; }
+
+  /* HERO */
+  .hero {
+    background: var(--navy);
+    padding: 140px 80px 100px;
+    position: relative; overflow: hidden;
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .hero-decor-1 {
+    position: absolute; top: -80px; right: -80px;
+    width: 400px; height: 400px; border-radius: 50%;
+    border: 1.5px solid rgba(255,255,255,0.05);
+    pointer-events: none;
+  }
+  .hero-decor-2 {
+    position: absolute; bottom: -60px; left: 60px;
+    width: 220px; height: 220px; border-radius: 50%;
+    border: 1px solid rgba(13,158,117,0.2);
+    pointer-events: none;
+  }
+  .hero-decor-3 {
+    position: absolute; top: 40%; right: 120px;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--amber); opacity: .6;
+    pointer-events: none;
+  }
+  .hero-decor-4 {
+    position: absolute; top: 30%; right: 200px;
+    width: 4px; height: 4px; border-radius: 50%;
+    background: var(--teal-pale); opacity: .5;
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(13,158,117,0.15);
+    border: 1px solid rgba(13,158,117,0.35);
+    color: #5dcaa5;
+    font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+    padding: 6px 16px; border-radius: 20px;
+    margin-bottom: 28px; width: fit-content;
+    animation: fadeUp .6s ease both;
+  }
+  .avail-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #5dcaa5;
+    box-shadow: 0 0 0 3px rgba(93,202,165,0.25);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(93,202,165,0.25); }
+    50% { box-shadow: 0 0 0 6px rgba(93,202,165,0.1); }
+  }
+  .hero-eyebrow {
+    font-size: 12px; color: rgba(255,255,255,0.35);
+    letter-spacing: .2em; text-transform: uppercase;
+    margin-bottom: 12px;
+    animation: fadeUp .6s .1s ease both;
+  }
+  .hero-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(52px, 7vw, 88px);
+    line-height: 1.0; color: #fff;
+    font-weight: 400; margin-bottom: 6px;
+    animation: fadeUp .6s .15s ease both;
+  }
+  .hero-name em {
+    color: var(--amber);
+    font-style: italic;
+  }
+  .hero-title {
+    font-size: 14px; color: rgba(255,255,255,0.4);
+    letter-spacing: .12em; text-transform: uppercase;
+    margin-bottom: 28px;
+    animation: fadeUp .6s .2s ease both;
+  }
+  .hero-desc {
+    font-size: 17px; color: rgba(255,255,255,0.68);
+    max-width: 540px; line-height: 1.75;
+    margin-bottom: 36px;
+    animation: fadeUp .6s .25s ease both;
+  }
+  .hero-desc strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+  .hero-cta {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    animation: fadeUp .6s .3s ease both;
+  }
+  .btn {
+    padding: 13px 28px; border-radius: 7px;
+    font-size: 14px; font-weight: 500;
+    cursor: pointer; border: none;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none; display: inline-block;
+    transition: all .2s;
+  }
+  .btn-primary {
+    background: var(--teal); color: #fff;
+    box-shadow: 0 4px 24px rgba(13,158,117,0.3);
+  }
+  .btn-primary:hover {
+    background: #0b8a65;
+    box-shadow: 0 6px 28px rgba(13,158,117,0.4);
+    transform: translateY(-1px);
+  }
+  .btn-ghost {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.8);
+  }
+  .btn-ghost:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-1px);
+  }
+  .hero-stats {
+    display: flex; gap: 40px; flex-wrap: wrap;
+    margin-top: 60px; padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    animation: fadeUp .6s .4s ease both;
+  }
+  .hero-stat-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px; color: #fff;
+    line-height: 1;
+  }
+  .hero-stat-num em { color: var(--amber); font-style: normal; }
+  .hero-stat-label {
+    font-size: 12px; color: rgba(255,255,255,0.38);
+    letter-spacing: .06em; margin-top: 4px;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* SECTIONS */
+  section { padding: 80px 80px; }
+  .section-tag {
+    font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--teal); font-weight: 500;
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 18px;
+  }
+  .section-tag::after {
+    content: ''; flex: 0 0 40px; height: 1px;
+    background: var(--teal); opacity: .4;
+  }
+  .section-heading {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 3.5vw, 42px);
+    line-height: 1.15; font-weight: 400;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    font-size: 15px; color: var(--muted);
+    max-width: 520px; margin-bottom: 40px;
+  }
+
+  /* SERVICES */
+  #services { background: #fff; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .service-card {
+    background: var(--off);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 26px;
+    transition: transform .2s, box-shadow .2s;
+    position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--teal), transparent);
+    opacity: 0; transition: opacity .3s;
+  }
+  .service-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+  .service-card:hover::before { opacity: 1; }
+  .service-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: var(--teal-light);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px; font-size: 22px;
+  }
+  .service-card h3 { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
+  .service-card p { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+  .service-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .stag {
+    font-size: 11px; padding: 3px 10px; border-radius: 12px;
+    background: var(--white); border: 1px solid var(--border);
+    color: var(--muted);
+  }
+
+  /* ABOUT */
+  #about { background: var(--off); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    align-items: start;
+  }
+  .about-left h2 { margin-bottom: 20px; }
+  .about-text { font-size: 15px; color: #444; line-height: 1.8; margin-bottom: 16px; }
+  .about-text strong { color: var(--text); font-weight: 500; }
+  .industries-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .ind {
+    background: var(--navy); color: rgba(255,255,255,0.85);
+    font-size: 12px; padding: 7px 16px; border-radius: 6px;
+    letter-spacing: .03em;
+  }
+  .about-right {}
+  .tools-section h3 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--muted); margin-bottom: 14px; font-weight: 500;
+  }
+  .tools-group { margin-bottom: 24px; }
+  .tools-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font-size: 12.5px; padding: 7px 16px; border-radius: 20px;
+    font-weight: 400; border: 1px solid var(--border);
+    background: var(--white); color: var(--text);
+  }
+  .chip.ai { background: var(--amber-light); border-color: rgba(239,159,39,.3); color: #854f0b; }
+  .chip.ops { background: var(--teal-light); border-color: rgba(13,158,117,.3); color: #0f6e56; }
+  .availability {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 12px; padding: 22px 24px; margin-top: 28px;
+  }
+  .avail-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .avail-row:last-child { margin-bottom: 0; }
+  .avail-icon { color: var(--teal); font-size: 18px; width: 22px; }
+  .avail-label { font-size: 13px; color: var(--muted); }
+  .avail-value { font-size: 13px; font-weight: 500; margin-left: auto; }
+
+  /* WHY ME */
+  #why { background: var(--navy); }
+  #why .section-tag { color: var(--amber); }
+  #why .section-tag::after { background: var(--amber); }
+  #why .section-heading { color: #fff; }
+  #why .section-sub { color: rgba(255,255,255,0.5); }
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: rgba(255,255,255,0.07); border-radius: 14px; overflow: hidden; }
+  .why-item {
+    background: var(--navy-2);
+    padding: 32px 28px;
+    transition: background .2s;
+  }
+  .why-item:hover { background: rgba(255,255,255,0.04); }
+  .why-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px; color: var(--teal);
+    line-height: 1; margin-bottom: 16px; opacity: .7;
+  }
+  .why-title { font-size: 16px; font-weight: 500; color: #fff; margin-bottom: 8px; }
+  .why-text { font-size: 13.5px; color: rgba(255,255,255,0.5); line-height: 1.7; }
+
+  /* CONTACT */
+  #contact { background: #fff; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .contact-left h2 { margin-bottom: 16px; }
+  .contact-left p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 32px; }
+  .contact-channels { display: flex; flex-direction: column; gap: 12px; }
+  .channel {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--off); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px 20px;
+    text-decoration: none; color: var(--text);
+    transition: all .2s;
+  }
+  .channel:hover { border-color: var(--teal); transform: translateX(4px); }
+  .channel-icon {
+    width: 40px; height: 40px; border-radius: 8px;
+    background: var(--teal-light); display: flex;
+    align-items: center; justify-content: center;
+    font-size: 20px; color: var(--teal); flex-shrink: 0;
+  }
+  .channel-name { font-weight: 500; font-size: 14px; }
+  .channel-note { font-size: 12px; color: var(--muted); }
+  .channel-arrow { margin-left: auto; color: var(--muted); font-size: 16px; }
+  .contact-form-box {
+    background: var(--off); border: 1px solid var(--border);
+    border-radius: 16px; padding: 36px;
+  }
+  .contact-form-box h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px; font-weight: 400; margin-bottom: 24px;
+  }
+  .form-group { margin-bottom: 18px; }
+  .form-group label { display: block; font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%; padding: 12px 16px;
+    background: #fff; border: 1px solid var(--border-strong);
+    border-radius: 8px; font-family: 'DM Sans', sans-serif;
+    font-size: 14px; color: var(--text);
+    transition: border-color .2s;
+    outline: none;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(13,158,117,.1); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%; padding: 14px;
+    background: var(--navy); color: #fff;
+    border: none; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px; font-weight: 500;
+    cursor: pointer; transition: background .2s;
+  }
+  .form-submit:hover { background: var(--teal); }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy);
+    padding: 40px 80px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 20px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-logo {
+    font-family: 'DM Serif Display', serif;
+    color: #fff; font-size: 20px; text-decoration: none;
+  }
+  .footer-logo em { color: var(--amber); font-style: italic; }
+  .footer-text { font-size: 12px; color: rgba(255,255,255,0.3); }
+  .footer-links { display: flex; gap: 20px; }
+  .footer-links a { color: rgba(255,255,255,0.35); font-size: 13px; text-decoration: none; transition: color .2s; }
+  .footer-links a:hover { color: rgba(255,255,255,0.7); }
+
+  /* DIVIDERS */
+  .section-divider { height: 1px; background: var(--border); margin: 0 80px; }
+
+  /* SCROLL REVEAL */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 100px 24px 60px; }
+    section { padding: 60px 24px; }
+    .section-divider { margin: 0 24px; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">Michael <em>Abat</em></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#why">Why Me</a></li>
+    <li><a href="#sample">Sample Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get In Touch</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-decor-1"></div>
+  <div class="hero-decor-2"></div>
+  <div class="hero-decor-3"></div>
+  <div class="hero-decor-4"></div>
+
+  <div class="hero-badge">
+    <span class="avail-dot"></span>
+    Available for new projects
+  </div>
+  <p class="hero-eyebrow">Virtual Assistant · Philippines (UTC+8)</p>
+  <h1 class="hero-name">Michael <em>Abat</em></h1>
+  <p class="hero-title">Operations Coordinator &nbsp;·&nbsp; SOP Writing &nbsp;·&nbsp; AI-Assisted Systems</p>
+  <p class="hero-desc">
+    I bring <strong>18+ years of manufacturing operations experience</strong> into VA work — helping business owners in manufacturing, e-commerce, logistics, and construction build clean, documented systems.
+  </p>
+  <div class="hero-cta">
+    <a href="#contact" class="btn btn-primary">Work With Me</a>
+    <a href="#services" class="btn btn-ghost">See My Services</a>
+  </div>
+  <div class="hero-stats">
+    <div>
+      <div class="hero-stat-num"><em>18+</em></div>
+      <div class="hero-stat-label">Years in operations</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">4</div>
+      <div class="hero-stat-label">Target industries</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">US &amp; AU</div>
+      <div class="hero-stat-label">Client timezones</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">ISO 9001</div>
+      <div class="hero-stat-label">Internal Auditor</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-tag">What I offer</div>
+  <h2 class="section-heading">Not just a task-doer.<br>A systems builder.</h2>
+  <p class="section-sub">I help business owners turn messy work into documented, reliable systems.</p>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-icon">📋</div>
+      <h3>Project Coordination</h3>
+      <p>Keep multiple projects moving. Track status. Push work to completion on time.</p>
+      <div class="service-tags">
+        <span class="stag">Tracking</span>
+        <span class="stag">Follow-Up</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔁</div>
+      <h3>Follow-Up &amp; Loop-Closing</h3>
+      <p>Liaise with your team and other VAs. Chase outstanding tasks so nothing stalls.</p>
+      <div class="service-tags">
+        <span class="stag">Team Coordination</span>
+        <span class="stag">Accountability</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔍</div>
+      <h3>Research &amp; Recommendations</h3>
+      <p>Research software, suppliers, and systems. Deliver clear, decision-ready summaries.</p>
+      <div class="service-tags">
+        <span class="stag">CRM Tools</span>
+        <span class="stag">Vendor Research</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🗂️</div>
+      <h3>Trackers &amp; Systems</h3>
+      <p>Build task trackers, spreadsheets, and organized file structures as your single source of truth.</p>
+      <div class="service-tags">
+        <span class="stag">ClickUp</span>
+        <span class="stag">Spreadsheets</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">✉️</div>
+      <h3>Email &amp; Priority Management</h3>
+      <p>Monitor and organize inboxes. Flag important actions, opportunities, and deadlines.</p>
+      <div class="service-tags">
+        <span class="stag">Inbox Zero</span>
+        <span class="stag">Prioritization</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">✅</div>
+      <h3>Compliance &amp; Documentation</h3>
+      <p>Organize and maintain documentation so it stays audit-ready, always.</p>
+      <div class="service-tags">
+        <span class="stag">ISO 9001</span>
+        <span class="stag">Audit-Ready</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-left reveal">
+      <div class="section-tag">About me</div>
+      <h2 class="section-heading">Helping businesses run smarter.</h2>
+      <p class="about-text">I'm Michael Abat, an Operations Coordinator and Virtual Assistant based in <strong>Baguio, Philippines</strong>. I have 18+ years of experience keeping complex operations organized, on-schedule, and audit-ready.</p>
+      <p class="about-text">My background is in <strong>regulated, quality-audited manufacturing environments</strong> (ISO 9001 Internal Auditor). Compliance documentation and attention to detail come naturally to me.</p>
+      <p class="about-text">I'm applying that same discipline to VA work now. I act as a founder's right hand — coordinating projects, chasing outstanding work, and turning messy information into clean, decision-ready systems.</p>
+      <p class="about-text"><strong>Industries I want to support:</strong> manufacturing, e-commerce, logistics, and construction businesses that are outgrowing their current systems.</p>
+      <div class="industries-list">
+        <span class="ind">Manufacturing</span>
+        <span class="ind">E-Commerce</span>
+        <span class="ind">Logistics</span>
+        <span class="ind">Construction</span>
+      </div>
+    </div>
+    <div class="about-right reveal">
+      <div class="tools-section">
+        <div class="tools-group">
+          <h3>Process &amp; Quality</h3>
+          <div class="tools-chips">
+            <span class="chip ai">Lean Six Sigma</span>
+            <span class="chip ai">ISO 9001 Auditing</span>
+            <span class="chip ai">PFMEA</span>
+          </div>
+        </div>
+        <div class="tools-group">
+          <h3>Operations &amp; Communication</h3>
+          <div class="tools-chips">
+            <span class="chip ops">ClickUp</span>
+            <span class="chip ops">Google Workspace</span>
+            <span class="chip ops">Microsoft Teams</span>
+            <span class="chip ops">Viber</span>
+          </div>
+        </div>
+        <div class="tools-group">
+          <h3>Specializations</h3>
+          <div class="tools-chips">
+            <span class="chip">Task &amp; Tracker Management</span>
+            <span class="chip">KPI Tracking</span>
+            <span class="chip">Documentation Audits</span>
+            <span class="chip">Remote Team Coordination</span>
+          </div>
+        </div>
+      </div>
+      <div class="availability">
+        <div class="avail-row">
+          <span class="avail-icon">🕐</span>
+          <span class="avail-label">Timezone</span>
+          <span class="avail-value">UTC+8 (PST)</span>
+        </div>
+        <div class="avail-row">
+          <span class="avail-icon">📅</span>
+          <span class="avail-label">Working hours</span>
+          <span class="avail-value">6am–6pm or 6pm–6am</span>
+        </div>
+        <div class="avail-row">
+          <span class="avail-icon">🌏</span>
+          <span class="avail-label">Client timezones</span>
+          <span class="avail-value">US &amp; Australia</span>
+        </div>
+        <div class="avail-row">
+          <span class="avail-icon">💰</span>
+          <span class="avail-label">Target rate</span>
+          <span class="avail-value">$25+/hr</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- WHY ME -->
+<section id="why">
+  <div class="section-tag">Why choose me</div>
+  <h2 class="section-heading" style="color:#fff">What makes me different.</h2>
+  <p class="section-sub">I position myself as an AI Systems VA — not a task-doer. That means more value for your business.</p>
+  <div class="why-grid reveal">
+    <div class="why-item">
+      <div class="why-num">01</div>
+      <div class="why-title">Systems over tasks</div>
+      <div class="why-text">I don't just do the work. I build the system so it gets done right — with or without me.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-num">02</div>
+      <div class="why-title">AI-assisted workflows</div>
+      <div class="why-text">I use Claude and ChatGPT in my own workflow. That means faster documentation and clearer systems.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-num">03</div>
+      <div class="why-title">Manufacturing-rooted, ops-minded</div>
+      <div class="why-text">18+ years in manufacturing taught me how operations break down. I'm applying that same thinking to e-commerce, logistics, and construction VA work now.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-num">04</div>
+      <div class="why-title">Flexible &amp; reliable</div>
+      <div class="why-text">I work shifts that match your business hours. You get support when you need it.</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SAMPLE WORK -->
+<section id="sample">
+  <div class="section-tag">Sample work</div>
+  <h2 class="section-heading">See how I document and track work.</h2>
+  <p class="section-sub">Four full demo suites for fictional companies. Each one has an SOP, a process flow diagram, a tracker, and a visual work instruction.</p>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <span class="chip ai" style="margin-bottom:14px; display:inline-block;">Demo Suite · E-Commerce</span>
+      <h3>Clearwater Supply Co. — Order Fulfillment</h3>
+      <p>Full SOP, swimlane diagram, Excel tracker, and visual work instruction for picking, packing, and shipping orders.</p>
+      <span class="stag" style="margin-top:16px; display:inline-block;">4-file suite — ask me for a copy</span>
+    </div>
+    <div class="service-card">
+      <span class="chip ai" style="margin-bottom:14px; display:inline-block;">Demo Suite · Logistics</span>
+      <h3>Swift Freight Logistics — Damaged Shipment Claims</h3>
+      <p>Full SOP, swimlane diagram, Excel tracker, and visual work instruction for handling damaged freight claims.</p>
+      <span class="stag" style="margin-top:16px; display:inline-block;">4-file suite — ask me for a copy</span>
+    </div>
+    <div class="service-card">
+      <span class="chip ai" style="margin-bottom:14px; display:inline-block;">Demo Suite · Manufacturing</span>
+      <h3>Ironclad Metal Works — Machine Downtime & Maintenance</h3>
+      <p>Full SOP, swimlane diagram, Excel tracker, and visual work instruction for reporting and resolving machine downtime.</p>
+      <span class="stag" style="margin-top:16px; display:inline-block;">4-file suite — ask me for a copy</span>
+    </div>
+    <div class="service-card">
+      <span class="chip ai" style="margin-bottom:14px; display:inline-block;">Demo Suite · E-Commerce</span>
+      <h3>Bloom & Basket Co. — Order Return & Refund</h3>
+      <p>Full SOP, swimlane diagram, Excel tracker, and visual work instruction for processing customer returns and refunds.</p>
+      <span class="stag" style="margin-top:16px; display:inline-block;">4-file suite — ask me for a copy</span>
+    </div>
+  </div>
+  <p style="margin-top:24px; font-size:13px; color:var(--muted);">All four are self-initiated demos with fictional companies and sample data. Built to show how I document, track, and communicate a process — not real client work.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-left reveal">
+      <div class="section-tag">Get in touch</div>
+      <h2 class="section-heading">Ready to build better systems?</h2>
+      <p>Let's talk about your operations. I'm available for US and AU clients and can match your timezone.</p>
+      <div class="contact-channels">
+        <a href="mailto:michaelabat351@gmail.com" class="channel">
+          <div class="channel-icon">✉️</div>
+          <div>
+            <div class="channel-name">Email</div>
+            <div class="channel-note">michaelabat351@gmail.com</div>
+          </div>
+          <span class="channel-arrow">→</span>
+        </a>
+        <a href="viber://chat?number=+639771941699" class="channel">
+          <div class="channel-icon">📱</div>
+          <div>
+            <div class="channel-name">Viber</div>
+            <div class="channel-note">+63 977-194-1699</div>
+          </div>
+          <span class="channel-arrow">→</span>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIEiWxJI4SzDTCWFQJ_wjkRlHXwpx1mvTLdTzPyFGF62-vXA/viewform" target="_blank" rel="noopener" class="channel">
+          <div class="channel-icon">📝</div>
+          <div>
+            <div class="channel-name">Free SOP Pilot</div>
+            <div class="channel-note">Tell me about your process</div>
+          </div>
+          <span class="channel-arrow">→</span>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX_h66cQxWgtT70QdJ5BjQxZLDgiVP5l2zSdcMIrMBIznRpg/viewform" target="_blank" rel="noopener" class="channel">
+          <div class="channel-icon">📋</div>
+          <div>
+            <div class="channel-name">New Client Intake</div>
+            <div class="channel-note">For paid project inquiries</div>
+          </div>
+          <span class="channel-arrow">→</span>
+        </a>
+        <a href="https://calendar.app.google/ejQp9bB6coQVZBnx6" target="_blank" rel="noopener" class="channel">
+          <div class="channel-icon">📅</div>
+          <div>
+            <div class="channel-name">Book a Call</div>
+            <div class="channel-note">Pick a time that works for you</div>
+          </div>
+          <span class="channel-arrow">→</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-form-box reveal">
+      <h3>Send me a message</h3>
+      <form action="https://formspree.io/f/xwvzgwln" method="POST">
+        <div class="form-group">
+          <label>Your name</label>
+          <input type="text" name="name" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" name="email" placeholder="john@company.com" required>
+        </div>
+        <div class="form-group">
+          <label>Industry</label>
+          <select name="industry">
+            <option value="">Select your industry</option>
+            <option>Manufacturing</option>
+            <option>E-Commerce</option>
+            <option>Logistics</option>
+            <option>Construction</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>What do you need?</label>
+          <textarea name="message" placeholder="Tell me about your operations challenge..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#home" class="footer-logo">Michael <em>Abat</em></a>
+  <p class="footer-text">Operations Coordinator &amp; AI Systems VA · Baguio, Philippines · UTC+8</p>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#sample">Sample Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
